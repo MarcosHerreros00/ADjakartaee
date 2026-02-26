@@ -38,8 +38,8 @@ COPY --from=build /app/target/marcosHerrerosADjakartaee.war /opt/payara/deployme
 COPY start-payara-micro.sh /opt/payara/start-payara-micro.sh
 COPY post-deploy-commands.asadmin /opt/payara/config/post-deploy-commands.asadmin
 
-# Make startup script executable (must be done as root)
-RUN chmod +x /opt/payara/start-payara-micro.sh
+# Convert line endings (Windows CRLF to Unix LF) and make executable
+RUN sed -i 's/\r$//' /opt/payara/start-payara-micro.sh && chmod +x /opt/payara/start-payara-micro.sh
 
 # Set ownership of all payara files to payara user
 RUN chown -R payara:payara /opt/payara
