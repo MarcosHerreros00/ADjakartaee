@@ -1,0 +1,12 @@
+com\miapp\vuelos\model\Aerolinea.class
+com\miapp\vuelos\model\Puerta.class
+com\miapp\vuelos\dto\VueloDTO.class
+com\miapp\vuelos\dao\VueloDAOImpl.class
+com\miapp\vuelos\service\VueloService.class
+com\miapp\vuelos\web\VueloResource.class
+com\miapp\vuelos\model\Terminal.class
+com\miapp\vuelos\dao\VueloDAO.class
+com\miapp\vuelos\web\JAXRSConfig.class
+com\miapp\vuelos\model\Aeropuerto.class
+com\miapp\vuelos\model\Avion.class
+com\miapp\vuelos\model\Vuelo.class

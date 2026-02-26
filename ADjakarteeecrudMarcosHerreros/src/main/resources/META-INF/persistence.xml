@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             version="3.0"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence
+                                 https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd">
+    <persistence-unit name="contactosPU" transaction-type="JTA">
+        <!-- IMPORTANTE: Configurar este datasource en tu servidor de aplicaciones
+             apuntando a la BD MySQL 'vuelos_db'. -->
+        <jta-data-source>jdbc/bd1DS</jta-data-source>
+
+        <properties>
+            <!-- Opcionales / dependientes del servidor -->
+            <property name="jakarta.persistence.schema-generation.database.action" value="none"/>
+        </properties>
+    </persistence-unit>
+</persistence>
