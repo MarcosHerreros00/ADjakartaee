@@ -1,0 +1,5 @@
+# Post-deploy commands for Payara Micro
+# These run after the application is deployed
+
+# Verify database connection is working
+ping-connection-pool PostgresPool
